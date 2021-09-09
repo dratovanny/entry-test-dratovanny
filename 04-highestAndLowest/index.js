@@ -4,5 +4,7 @@
  * @returns {string} - returns the new string
  */
 export const highestAndLowest = (numbers) => {
-
+    let splittedNumbers = numbers.split(' ');
+    
+    return Math.min(...splittedNumbers) + ' ' + Math.max(...splittedNumbers);
 }
